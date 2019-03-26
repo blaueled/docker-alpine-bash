@@ -19,7 +19,7 @@ fi
 
 function trigger () {
     echo "trigger url: ${1}"
-    curl -X POST -d "Content-Length: 0" $1
+    curl -X POST $1
 }
 
 while true ; do
